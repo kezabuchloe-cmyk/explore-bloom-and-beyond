@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>All Destinations | Explore Bloom &amp; Beyond</title>
+<meta content="Browse Explore Bloom &amp; Beyond destinations across Uganda, Kenya, Tanzania, Rwanda, Zanzibar, Dubai, and more, then send an inquiry or booking request." name="description"/>
+<meta content="Safari destinations, Uganda destinations, East Africa tours, Zanzibar travel" name="keywords"/>
+<meta content="index, follow" name="robots"/>
+<link href="https://www.explorebloomandbeyond.com/destinations.html" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="Explore Bloom &amp; Beyond" property="og:site_name"/>
+<meta content="All Destinations | Explore Bloom &amp; Beyond" property="og:title"/>
+<meta content="Browse Explore Bloom &amp; Beyond destinations across Uganda, Kenya, Tanzania, Rwanda, Zanzibar, Dubai, and more, then send an inquiry or booking request." property="og:description"/>
+<meta content="https://www.explorebloomandbeyond.com/destinations.html" property="og:url"/>
+<meta content="https://www.explorebloomandbeyond.com/assets/explore-bloom-logo.jpg" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="All Destinations | Explore Bloom &amp; Beyond" name="twitter:title"/>
+<meta content="Browse Explore Bloom &amp; Beyond destinations across Uganda, Kenya, Tanzania, Rwanda, Zanzibar, Dubai, and more, then send an inquiry or booking request." name="twitter:description"/>
+<meta content="https://www.explorebloomandbeyond.com/assets/explore-bloom-logo.jpg" name="twitter:image"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://www.googletagmanager.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="assets/explore-bloom-logo.webp" rel="icon" type="image/webp"/>
+<link href="styles.css" rel="stylesheet"/>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Explore Bloom & Beyond",
+    "url": "https://www.explorebloomandbeyond.com/",
+    "image": "https://www.explorebloomandbeyond.com/assets/explore-bloom-logo.jpg",
+    "telephone": "+256788518714",
+    "email": "info@explorebloomandbeyond.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kampala",
+      "addressCountry": "UG"
+    },
+    "areaServed": ["Uganda", "Kenya", "Tanzania", "Rwanda", "Zanzibar", "Dubai"],
+    "sameAs": []
+  }
+  </script>
+</head>
+<body class="destinations-page">
+<header class="site-header">
+<nav aria-label="Primary navigation" class="navbar">
+<a aria-label="Explore Bloom and Beyond home" class="logo brand-logo" href="index.html">
+<img alt="Explore Bloom &amp; Beyond logo" src="assets/explore-bloom-logo.webp"/>
+<span class="brand-name">Explore Bloom <b>&amp; Beyond</b></span>
+</a>
+<button aria-expanded="false" aria-label="Open navigation" class="menu-toggle">☰</button>
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a aria-current="page" href="destinations.html">Destinations</a>
+<a href="trips.html">Trips</a>
+<a href="blog.html">Blog</a>
+<a href="contact.html">Contact</a>
+<a class="nav-phone" href="tel:+256788518714">+256 788 518714</a>
+<a class="nav-admin" href="login.html">Login</a>
+</div>
+</nav>
+</header>
+<main>
+<section class="page-hero destinations-hero">
+<div>
+<p class="eyebrow">All destinations</p>
+<h1>Explore every destination Explore Bloom &amp; Beyond can help you plan.</h1>
+<p>Click any destination to send an inquiry or booking request with your nationality, group size, travel date, and preferred number of days.</p>
+</div>
+<button class="btn secondary" data-open-support="" type="button">Ask Us</button>
+</section>
+<section class="section">
+<div class="section-heading split-heading">
+<div>
+<p class="eyebrow">Browse</p>
+<h2>Choose a destination</h2>
+</div>
+<p>These destinations are managed from the admin dashboard and stored in the JSON backend.</p>
+</div>
+<div aria-live="polite" class="destination-grid all-destinations-grid loading-grid" id="destinationsGrid"></div>
+</section>
+</main>
+<footer class="footer">
+<div class="footer-brand">
+<div class="footer-brand-row">
+<img alt="Explore Bloom &amp; Beyond logo" src="assets/explore-bloom-logo.webp"/>
+<h3>Explore Bloom &amp; Beyond</h3>
+</div>
+<p>Travel, wellness, nature, wildlife, and culture—organized into memorable Uganda journeys.</p>
+<a class="footer-phone" href="tel:+256788518714">+256 788 518714</a>
+</div>
+<div>
+<h4>Explore</h4>
+<a href="destinations.html">Destinations</a>
+<a href="trips.html">Trips</a>
+<a href="blog.html">Travel Blog</a>
+
+<a href="contact.html">Contact</a>
+</div>
+<div>
+<h4>Follow</h4>
+<div class="footer-social-links" id="footerSocialLinks"></div>
+</div>
+</footer>
+<div aria-labelledby="requestModalTitle" aria-modal="true" class="modal hidden" id="requestModal" role="dialog">
+<div class="modal-panel">
+<button aria-label="Close request form" class="modal-close" data-close-modal="" type="button">×</button>
+<p class="eyebrow">Travel request</p>
+<h2 id="requestModalTitle">Plan this trip</h2>
+<p class="admin-muted" id="requestModalSummary"></p>
+<form class="modal-form" id="destinationRequestForm">
+<input name="source" type="hidden" value="destination-page"/>
+<input id="modalDestination" name="destination" type="hidden"/>
+<div class="form-row two-cols">
+<div>
+<label for="modalFullName">Full Name</label>
+<input id="modalFullName" name="fullName" required="" type="text"/>
+</div>
+<div>
+<label for="modalEmail">Email</label>
+<input id="modalEmail" name="email" required="" type="email"/>
+</div>
+</div>
+<div class="form-row two-cols">
+<div>
+<label for="modalPhone">Phone</label>
+<input id="modalPhone" name="phone" required="" type="tel"/>
+</div>
+<div>
+<label for="modalNationality">Nationality</label>
+<input id="modalNationality" name="nationality" placeholder="Ugandan, Kenyan, American..." required="" type="text"/>
+</div>
+</div>
+<div class="form-row two-cols">
+<div>
+<label for="modalTravelers">Number of People</label>
+<input id="modalTravelers" max="100" min="1" name="travelers" required="" type="number" value="1"/>
+</div>
+<div>
+<label for="modalDays">Number of Days</label>
+<input id="modalDays" max="90" min="1" name="days" required="" type="number" value="3"/>
+</div>
+</div>
+<div class="form-row two-cols">
+<div>
+<label for="modalRequestType">Request Type</label>
+<select id="modalRequestType" name="requestType" required="">
+<option value="inquiry">Inquiry</option>
+<option value="booking">Booking Request</option>
+</select>
+</div>
+<div>
+<label for="modalStartDate">Preferred Travel Date</label>
+<input id="modalStartDate" name="startDate" type="date"/>
+</div>
+</div>
+<div class="form-row">
+<label for="modalTrip">Related Trip</label>
+<select id="modalTrip" name="trip">
+<option value="">Any suitable trip</option>
+</select>
+</div>
+<div class="form-row">
+<label for="modalMessage">Message</label>
+<textarea id="modalMessage" name="message" placeholder="Ask a question or describe the itinerary you want." rows="4"></textarea>
+</div>
+<button class="btn primary full" type="submit">Send Request</button>
+<p class="form-message" id="modalFormMessage" role="status"></p>
+</form>
+</div>
+</div>
+<button aria-label="Chat with customer care" class="support-fab" data-open-support="" type="button">Customer Care</button>
+<section aria-label="Customer care chat" class="support-panel hidden" id="supportPanel">
+<div class="support-header">
+<div>
+<strong>Customer Care</strong>
+<span>Chat with admin support</span>
+</div>
+<button aria-label="Close support chat" data-close-support="" type="button">×</button>
+</div>
+<div class="support-messages" id="supportMessages"></div>
+<form class="support-form" id="supportForm">
+<div id="supportIdentityFields">
+<input id="supportName" name="name" placeholder="Your name" required="" type="text"/>
+<input id="supportEmail" name="email" placeholder="Email, optional" type="email"/>
+</div>
+<textarea id="supportMessage" name="message" placeholder="Type your message..." required="" rows="3"></textarea>
+<button class="btn primary full" type="submit">Send Message</button>
+<p class="form-message" id="supportStatus" role="status"></p>
+</form>
+</section>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Login | Explore Bloom & Beyond</title>
+  <meta name="description" content="Log in to manage your Explore Bloom & Beyond bookings and payments."/>
+  <link rel="icon" href="assets/explore-bloom-logo.webp"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="account-page">
+<header class="site-header">
+<nav aria-label="Primary navigation" class="navbar">
+<a aria-label="Explore Bloom and Beyond home" class="logo brand-logo" href="index.html"><img alt="Explore Bloom & Beyond logo" src="assets/explore-bloom-logo.webp"/><span class="brand-name">Explore Bloom <b>&amp; Beyond</b></span></a>
+<button aria-expanded="false" aria-label="Open navigation" class="menu-toggle">☰</button>
+<div class="nav-links"><a href="index.html">Home</a><a href="destinations.html">Destinations</a><a href="trips.html">Trips</a><a href="contact.html">Contact</a><a class="nav-admin" aria-current="page" href="login.html">Login</a></div>
+</nav>
+</header>
+<main class="account-shell">
+<section class="account-card">
+<div class="account-intro">
+<p class="eyebrow">Traveler account</p>
+<h1>Welcome back.</h1>
+<p>View your requests, quotes, booking status, and payments in one place.</p>
+</div>
+<form id="loginForm" class="account-form">
+<div class="form-row"><label for="loginEmail">Email</label><input id="loginEmail" name="email" type="email" autocomplete="email" required/></div>
+<div class="form-row"><label for="loginPassword">Password</label><input id="loginPassword" name="password" type="password" autocomplete="current-password" required/></div>
+<button class="btn primary full" type="submit">Log In</button>
+<p id="accountMessage" class="form-message" role="status"></p>
+<div class="account-links"><a href="forgot-password.html">Reset Password</a><a href="register.html">Create Account</a></div>
+</form>
+</section>
+</main>
+<script src="account.js"></script>
+</body>
+</html>

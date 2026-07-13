@@ -1,0 +1,11 @@
+Railway dependency-install fix
+
+1. Replaced private/internal package download URLs in package-lock.json with the public npm registry.
+2. Added .npmrc to force npm to use https://registry.npmjs.org/.
+3. Application code was not otherwise changed.
+
+Railway settings after uploading these files:
+- Root Directory: /explore_bloom_beyond_railway
+- Custom Build Command: leave blank (remove "npm install")
+- Start Command: npm start, or leave automatic
+- Redeploy with the build cache cleared if Railway offers that option.
