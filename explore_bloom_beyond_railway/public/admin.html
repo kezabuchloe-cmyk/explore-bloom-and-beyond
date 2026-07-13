@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Admin | Explore Bloom & Beyond</title>
+  <meta name="robots" content="noindex,nofollow"/>
+  <link rel="icon" href="assets/explore-bloom-logo.webp"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="admin-body">
+<header class="admin-topbar">
+<a class="logo brand-logo" href="index.html"><img alt="Explore Bloom & Beyond logo" src="assets/explore-bloom-logo.webp"/><span class="brand-name">Explore Bloom <b>&amp; Beyond</b></span></a>
+<div class="admin-top-actions"><span id="adminIdentity"></span><button class="admin-button secondary" id="adminLogout" type="button">Log Out</button></div>
+</header>
+<div class="admin-layout">
+<aside class="admin-sidebar" aria-label="Admin sections">
+<button class="admin-nav active" data-panel="overview" type="button">Overview</button>
+<button class="admin-nav" data-panel="bookings" type="button">Bookings</button>
+<button class="admin-nav" data-panel="customers" type="button">Customers</button>
+<button class="admin-nav" data-panel="payments" type="button">Payments</button>
+<button class="admin-nav" data-panel="content" type="button">Content</button>
+<button class="admin-nav" data-panel="support" type="button">Support</button>
+<a class="admin-nav link-nav" href="index.html">View Site</a>
+</aside>
+<main class="admin-main">
+<div class="admin-heading"><div><p class="eyebrow">Management</p><h1>Booking platform</h1></div><button class="admin-button primary" id="refreshAdmin" type="button">Refresh</button></div>
+<p id="adminMessage" class="form-message" role="status"></p>
+<section class="admin-panel active" data-panel-content="overview"><div id="adminMetrics" class="admin-metrics"></div><div class="admin-card"><h2>Recent bookings</h2><div id="recentBookings"></div></div></section>
+<section class="admin-panel" data-panel-content="bookings"><div class="admin-card"><div class="admin-section-title"><div><p class="eyebrow">Bookings</p><h2>Requests and quotes</h2></div><input id="bookingSearch" class="admin-search" placeholder="Search bookings"/></div><div id="adminBookings"></div></div></section>
+<section class="admin-panel" data-panel-content="customers"><div class="admin-card"><div class="admin-section-title"><div><p class="eyebrow">Customers</p><h2>Accounts</h2></div><input id="customerSearch" class="admin-search" placeholder="Search customers"/></div><div id="adminCustomers"></div></div></section>
+<section class="admin-panel" data-panel-content="payments"><div class="admin-card"><p class="eyebrow">Payments</p><h2>Payment records</h2><div id="adminPayments"></div></div></section>
+<section class="admin-panel" data-panel-content="content">
+<div class="admin-content-grid">
+<div class="admin-card"><div class="admin-section-title"><div><p class="eyebrow">Content</p><h2>Manage website</h2></div><select id="contentCollection"><option value="trips">Trips</option><option value="destinations">Destinations</option><option value="posts">Blog Posts</option><option value="socials">Social Links</option></select></div><form id="contentForm" class="admin-form"></form></div>
+<div class="admin-card"><h2 id="contentListTitle">Trips</h2><div id="contentList"></div></div>
+</div>
+</section>
+<section class="admin-panel" data-panel-content="support"><div class="admin-card"><p class="eyebrow">Support</p><h2>Customer chats</h2><div id="adminChats"></div></div></section>
+</main>
+</div>
+<script src="admin.js"></script>
+</body>
+</html>

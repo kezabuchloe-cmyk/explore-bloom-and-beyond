@@ -1,0 +1,31 @@
+{
+  "name": "explore-bloom-beyond-railway",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Explore Bloom & Beyond booking platform for Railway with PostgreSQL, customer accounts, admin tools, and Pesapal payments.",
+  "main": "server.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "NODE_ENV=development node server.js",
+    "migrate": "node scripts/migrate.js",
+    "create-admin": "node scripts/create-admin.js",
+    "test": "node --test",
+    "check": "node --check server.js && node --check src/auth.js && node --check src/db.js && node --check src/mailer.js && node --check src/pesapal.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "compression": "^1.8.1",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.0.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^9.0.3",
+    "pg": "^8.16.3",
+    "pg-mem": "^3.0.5"
+  }
+}

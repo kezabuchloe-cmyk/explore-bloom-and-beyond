@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Create Account | Explore Bloom & Beyond</title>
+  <meta name="description" content="Create an Explore Bloom & Beyond account to manage bookings and payments."/>
+  <link rel="icon" href="assets/explore-bloom-logo.webp"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="account-page">
+<header class="site-header">
+<nav aria-label="Primary navigation" class="navbar">
+<a aria-label="Explore Bloom and Beyond home" class="logo brand-logo" href="index.html"><img alt="Explore Bloom & Beyond logo" src="assets/explore-bloom-logo.webp"/><span class="brand-name">Explore Bloom <b>&amp; Beyond</b></span></a>
+<button aria-expanded="false" aria-label="Open navigation" class="menu-toggle">☰</button>
+<div class="nav-links"><a href="index.html">Home</a><a href="destinations.html">Destinations</a><a href="trips.html">Trips</a><a href="contact.html">Contact</a><a class="nav-admin" href="login.html">Login</a></div>
+</nav>
+</header>
+<main class="account-shell">
+<section class="account-card wide-account-card">
+<div class="account-intro">
+<p class="eyebrow">Traveler account</p>
+<h1>Create your account.</h1>
+<p>Use the same email as an earlier request and it will appear in your dashboard.</p>
+</div>
+<form id="registerForm" class="account-form">
+<div class="form-row two-cols"><div><label for="registerName">Full Name</label><input id="registerName" name="fullName" autocomplete="name" required/></div><div><label for="registerEmail">Email</label><input id="registerEmail" name="email" type="email" autocomplete="email" required/></div></div>
+<div class="form-row two-cols"><div><label for="registerPhone">Phone</label><input id="registerPhone" name="phone" type="tel" autocomplete="tel" required/></div><div><label for="registerNationality">Nationality</label><input id="registerNationality" name="nationality" autocomplete="country-name"/></div></div>
+<div class="form-row two-cols"><div><label for="registerPassword">Password</label><input id="registerPassword" name="password" type="password" minlength="8" autocomplete="new-password" required/><small>Use at least 8 characters with a letter and number.</small></div><div><label for="registerConfirm">Confirm Password</label><input id="registerConfirm" name="confirmPassword" type="password" minlength="8" autocomplete="new-password" required/></div></div>
+<button class="btn primary full" type="submit">Create Account</button>
+<p id="accountMessage" class="form-message" role="status"></p>
+<div class="account-links"><a href="login.html">Log In</a></div>
+</form>
+</section>
+</main>
+<script src="account.js"></script>
+</body>
+</html>

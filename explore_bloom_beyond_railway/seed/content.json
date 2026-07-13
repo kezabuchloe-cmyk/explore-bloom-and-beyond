@@ -1,0 +1,233 @@
+{
+  "destinations": [
+    {
+      "id": "dest-bwindi",
+      "name": "Bwindi Impenetrable National Park",
+      "region": "Western Uganda",
+      "summary": "Mountain gorilla trekking, Batwa cultural experiences, scenic forest drives, and intimate lodge stays.",
+      "imageUrl": "assets/package-bwindi.webp",
+      "featured": true
+    },
+    {
+      "id": "dest-kidepo",
+      "name": "Kidepo Valley National Park",
+      "region": "Northern Uganda",
+      "summary": "Remote wilderness, dramatic savannah landscapes, game drives, wildlife, and authentic cultural encounters.",
+      "imageUrl": "assets/package-kidepo.webp",
+      "featured": true
+    },
+    {
+      "id": "dest-murchison",
+      "name": "Murchison Falls National Park",
+      "region": "Northwestern Uganda",
+      "summary": "Nile boat cruises, game drives, the top of the falls, giraffes, elephants, and memorable photography stops.",
+      "imageUrl": "assets/package-murchison.webp",
+      "featured": true
+    },
+    {
+      "id": "dest-bunyonyi",
+      "name": "Lake Bunyonyi",
+      "region": "Southwestern Uganda",
+      "summary": "A peaceful island-dotted lake for wellness retreats, canoe rides, sunrise views, and slow nature escapes.",
+      "imageUrl": "assets/package-bunyonyi.webp",
+      "featured": false
+    },
+    {
+      "id": "dest-jinja",
+      "name": "Jinja",
+      "region": "Eastern Uganda",
+      "summary": "White-water rafting, the Source of the Nile, adrenaline activities, photography, and lively weekend breaks.",
+      "imageUrl": "assets/package-jinja.webp",
+      "featured": false
+    },
+    {
+      "id": "dest-sipi",
+      "name": "Sipi Falls & Mount Elgon",
+      "region": "Eastern Uganda",
+      "summary": "Waterfall hikes, coffee experiences, mountain air, green landscapes, and rich local experiences.",
+      "imageUrl": "assets/package-sipi.webp",
+      "featured": false
+    },
+    {
+      "id": "dest-fort-portal",
+      "name": "Fort Portal",
+      "region": "Western Uganda",
+      "summary": "Crater lakes, tea plantations, waterfalls, nature walks, wellness, and lush countryside scenery.",
+      "imageUrl": "assets/package-fortportal.webp",
+      "featured": false
+    }
+  ],
+  "trips": [
+    {
+      "id": "trip-bwindi-3-day",
+      "title": "Bwindi Gorilla Trekking Experience",
+      "destination": "Bwindi Impenetrable National Park",
+      "category": "Gorilla Trekking",
+      "duration": "3 days",
+      "days": 3,
+      "price": 1600,
+      "summary": "Includes a gorilla trekking permit, accommodation, full-board meals, return transport, an English-speaking guide, park fees, and bottled water. Price shown is the from rate for larger groups.",
+      "imageUrl": "assets/package-bwindi.webp",
+      "featured": true
+    },
+    {
+      "id": "trip-bwindi-bunyonyi-4-day",
+      "title": "Gorilla Trekking & Lake Bunyonyi Escape",
+      "destination": "Bwindi & Lake Bunyonyi",
+      "category": "Wildlife & Wellness",
+      "duration": "4 days",
+      "days": 4,
+      "price": 1950,
+      "summary": "Combine a lifetime gorilla encounter with a relaxing Lake Bunyonyi escape, scenic drives, local culture, and beautiful photography opportunities.",
+      "imageUrl": "assets/package-bwindi-bunyonyi.webp",
+      "featured": false
+    },
+    {
+      "id": "trip-kidepo-3-day",
+      "title": "Kidepo Valley National Park Adventure",
+      "destination": "Kidepo Valley National Park",
+      "category": "Safari",
+      "duration": "3 days • 2 nights",
+      "days": 3,
+      "price": 890,
+      "summary": "Luxury accommodation, multiple game drives, a cultural visit, park fees, full-board meals, a professional guide, and Kampala–Kidepo return transport.",
+      "imageUrl": "assets/package-kidepo.webp",
+      "featured": true
+    },
+    {
+      "id": "trip-murchison-2-day",
+      "title": "Murchison Falls National Park Safari",
+      "destination": "Murchison Falls National Park",
+      "category": "Safari & Boat Cruise",
+      "duration": "2 days • 1 night",
+      "days": 2,
+      "price": 250,
+      "summary": "Return transport, one night of accommodation, meals, a game drive, Nile boat cruise, top-of-the-falls visit, guide, bottled water, and photography stops.",
+      "imageUrl": "assets/package-murchison.webp",
+      "featured": true
+    },
+    {
+      "id": "trip-bunyonyi-2-day",
+      "title": "Lake Bunyonyi Wellness Retreat",
+      "destination": "Lake Bunyonyi",
+      "category": "Wellness Retreat",
+      "duration": "2 days",
+      "days": 2,
+      "price": 270,
+      "summary": "Lake-view accommodation, canoe ride, island visit, sunrise and sunset experiences, guided wellness walk, breakfast, and return transport.",
+      "imageUrl": "assets/package-bunyonyi.webp",
+      "featured": false
+    },
+    {
+      "id": "trip-jinja-2-day",
+      "title": "Jinja Adrenaline Adventure",
+      "destination": "Jinja",
+      "category": "Adventure",
+      "duration": "2 days • 1 night",
+      "days": 2,
+      "price": 140,
+      "summary": "Return transport, one-night accommodation, white-water rafting, a Source of the Nile visit, photography, and breakfast. Accommodation upgrades are available.",
+      "imageUrl": "assets/package-jinja.webp",
+      "featured": false
+    },
+    {
+      "id": "trip-sipi-elgon",
+      "title": "Sipi Falls & Mount Elgon Escape",
+      "destination": "Sipi Falls & Mount Elgon",
+      "category": "Hiking & Culture",
+      "duration": "Flexible itinerary",
+      "price": 365,
+      "summary": "Accommodation, transport, a guided waterfall hike, coffee experience, nature walks, meals, and photography in Eastern Uganda.",
+      "imageUrl": "assets/package-sipi.webp",
+      "featured": false
+    },
+    {
+      "id": "trip-fort-portal-2-day",
+      "title": "Fort Portal Nature & Wellness Experience",
+      "destination": "Fort Portal",
+      "category": "Nature & Wellness",
+      "duration": "2 days",
+      "days": 2,
+      "price": 225,
+      "summary": "Luxury accommodation, return transport, crater lake tour, tea plantation walk, waterfall visit, nature walks, breakfast, photography, and a local host.",
+      "imageUrl": "assets/package-fortportal.webp",
+      "featured": false
+    }
+  ],
+  "posts": [
+    {
+      "id": "post-uganda-safari-tips",
+      "title": "What to Pack for a Uganda Safari",
+      "author": "Explore Bloom & Beyond Team",
+      "publishedAt": "2026-07-01",
+      "excerpt": "A practical checklist for game drives, gorilla trekking, lodge stays, and changing weather.",
+      "imageUrl": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80",
+      "content": "Pack comfortable layers, neutral clothing, sunscreen, insect repellent, binoculars, reusable water bottle, camera batteries, and a small day bag. For gorilla trekking, add hiking shoes, garden gloves, rain gear, and long sleeves."
+    },
+    {
+      "id": "post-zanzibar-guide",
+      "title": "A First-Timer Guide to Zanzibar",
+      "author": "Explore Bloom & Beyond Team",
+      "publishedAt": "2026-06-20",
+      "excerpt": "How to mix beach relaxation with Stone Town, spice tours, and local food experiences.",
+      "imageUrl": "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=900&q=80",
+      "content": "Spend time on the beach, visit Stone Town, tour spice farms, try local seafood, and plan boat activities around tide conditions. Zanzibar pairs beautifully with a safari in Tanzania, Kenya, or Uganda."
+    },
+    {
+      "id": "post-group-travel",
+      "title": "How to Plan a Smooth Group Trip",
+      "author": "Explore Bloom & Beyond Team",
+      "publishedAt": "2026-06-02",
+      "excerpt": "Simple planning tips for family holidays, company retreats, and school trips.",
+      "imageUrl": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80",
+      "content": "Choose a clear budget, collect traveler details early, agree on must-have activities, and assign one group contact person. A shared itinerary and early rooming list make the experience smoother."
+    },
+    {
+      "id": "post-best-time-uganda",
+      "title": "Best Time to Visit Uganda for Safaris and Gorillas",
+      "author": "Explore Bloom & Beyond Team",
+      "publishedAt": "2026-05-12",
+      "excerpt": "A seasonal guide for wildlife viewing, gorilla trekking, family travel, and photography.",
+      "imageUrl": "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=900&q=80",
+      "content": "Uganda is a year-round destination, but many travelers prefer the drier months for easier trekking and game drives. Green seasons can offer lush scenery, birdlife, and fewer crowds."
+    },
+    {
+      "id": "post-honeymoon-safari",
+      "title": "Safari Honeymoon Ideas for East Africa",
+      "author": "Explore Bloom & Beyond Team",
+      "publishedAt": "2026-04-25",
+      "excerpt": "Romantic ways to combine wildlife, private lodges, beaches, sunset cruises, and slow travel.",
+      "imageUrl": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=900&q=80",
+      "content": "A strong honeymoon itinerary balances adventure and rest. Pair a private safari lodge with beach days, scenic flights, candle-lit dinners, and flexible transfers so the trip never feels rushed."
+    },
+    {
+      "id": "post-travel-budget",
+      "title": "How to Budget for an African Safari",
+      "author": "Explore Bloom & Beyond Team",
+      "publishedAt": "2026-04-03",
+      "excerpt": "Understand permits, accommodation, transport, park fees, meals, and private guide costs before booking.",
+      "imageUrl": "https://images.unsplash.com/photo-1528277342758-f1d7613953a2?auto=format&fit=crop&w=900&q=80",
+      "content": "Your safari budget depends on season, accommodation style, transport distance, permits, park fees, group size, and guide level. Sharing your budget early helps the travel team design realistic options."
+    }
+  ],
+  "socials": [
+    {
+      "id": "contact-whatsapp",
+      "platform": "WhatsApp",
+      "handle": "+256 788 518714",
+      "url": "https://wa.me/256788518714"
+    },
+    {
+      "id": "contact-email",
+      "platform": "Email",
+      "handle": "info@explorebloomandbeyond.com",
+      "url": "mailto:info@explorebloomandbeyond.com"
+    },
+    {
+      "id": "contact-website",
+      "platform": "Website",
+      "handle": "explorebloomandbeyond.com",
+      "url": "https://www.explorebloomandbeyond.com"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>My Dashboard | Explore Bloom & Beyond</title>
+  <meta name="robots" content="noindex,nofollow"/>
+  <link rel="icon" href="assets/explore-bloom-logo.webp"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="portal-page">
+<header class="site-header">
+<nav aria-label="Primary navigation" class="navbar">
+<a aria-label="Explore Bloom and Beyond home" class="logo brand-logo" href="index.html"><img alt="Explore Bloom & Beyond logo" src="assets/explore-bloom-logo.webp"/><span class="brand-name">Explore Bloom <b>&amp; Beyond</b></span></a>
+<button aria-expanded="false" aria-label="Open navigation" class="menu-toggle">☰</button>
+<div class="nav-links"><a href="index.html">Home</a><a href="trips.html">Trips</a><a href="contact.html">Contact</a><button class="nav-logout" id="logoutButton" type="button">Log Out</button></div>
+</nav>
+</header>
+<main class="portal-shell">
+<section class="portal-heading">
+<div><p class="eyebrow">Traveler dashboard</p><h1 id="dashboardGreeting">Your journeys</h1><p>Manage requests, quotes, booking status, and payments.</p></div>
+<a class="btn primary compact" href="trips.html">Book Trip</a>
+</section>
+<div class="portal-grid">
+<section class="portal-main">
+<div class="dashboard-stats" id="dashboardStats"></div>
+<div class="section-heading compact-heading"><div><p class="eyebrow">Bookings</p><h2>Your requests</h2></div></div>
+<div id="bookingList" class="dashboard-bookings"><div class="empty-state">Loading bookings…</div></div>
+</section>
+<aside class="portal-sidebar">
+<section class="portal-card">
+<p class="eyebrow">Profile</p><h2>Your details</h2>
+<form id="profileForm" class="compact-form">
+<div class="form-row"><label for="profileName">Full Name</label><input id="profileName" name="fullName" required/></div>
+<div class="form-row"><label for="profileEmail">Email</label><input id="profileEmail" type="email" disabled/></div>
+<div class="form-row"><label for="profilePhone">Phone</label><input id="profilePhone" name="phone" required/></div>
+<div class="form-row"><label for="profileNationality">Nationality</label><input id="profileNationality" name="nationality"/></div>
+<button class="btn dark full" type="submit">Save Profile</button><p id="profileMessage" class="form-message" role="status"></p>
+</form>
+</section>
+<section class="portal-card support-card"><p class="eyebrow">Need help?</p><h2>Talk to us.</h2><p>Call or WhatsApp our reservations team.</p><a class="btn primary full" href="https://wa.me/256788518714" target="_blank" rel="noopener">Open WhatsApp</a></section>
+</aside>
+</div>
+</main>
+<script src="dashboard.js"></script>
+</body>
+</html>
